@@ -5,7 +5,9 @@ this_list  = random.sample(range(100),60)
 print "Orginal List...."
 print this_list
 
-
+"""
+Divide and conquer recursively
+"""
 def merge_sort(unsorted_list):
     list_length = len(unsorted_list)
     if list_length == 1:
@@ -19,6 +21,9 @@ def merge_sort(unsorted_list):
     sublist2 = merge_sort(sublist2)
     return mergeit(sublist1,sublist2)
 
+"""
+Merge given two lists in sorted order of their elements
+"""
 def mergeit(list1,list2):
     length = min(len(list1),len(list2))
 
